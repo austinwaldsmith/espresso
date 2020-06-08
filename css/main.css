@@ -28,6 +28,8 @@ video {
 
 h1 {
   font-size: 7rem;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
 }
 
 h2 {
@@ -37,12 +39,13 @@ h2 {
 h1,
 h2 {
   color: white;
+  opacity: 0;
 }
 
 button {
   padding: 2rem 5rem;
   border: 10px solid white;
-  background: rgba(196, 194, 194, 0);
+  background: rgba(0, 0, 0, 0.233);
   color: white;
   font-size: calc(3.5rem + 1vw);
   font-weight: 600;
@@ -50,12 +53,17 @@ button {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 15%;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  opacity: 0;
+  -webkit-transform: translatey(2rem);
+          transform: translatey(2rem);
 }
 
 button:hover {
-  background: rgba(196, 194, 194, 0.479);
+  background: rgba(0, 0, 0, 0.479);
+  border-color: black;
+  letter-spacing: 0.2rem;
 }
 
 .row {
@@ -115,7 +123,7 @@ button:hover {
   button {
     padding: 1rem 4rem;
     font-size: calc(2rem + 1vw);
-    border: 5px solid white;
+    border-width: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
