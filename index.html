@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap"
       rel="stylesheet"
@@ -11,13 +11,20 @@
     <title>Espresso</title>
   </head>
   <body>
-    <div class="row">
-      <h1>Espresso<br />Addiction?</h1>
-      <button class="submit">The Goods</button>
-      <h2>We get it.</h2>
-    </div>
-
-    <video src="C Espresso.m4v" autoplay loop></video>
-    <script src="js/index.js"></script>
+    <section class="espresso">
+      <div class="row">
+        <h1>Espresso<br />Addiction?</h1>
+        <button class="submit">The Goods</button>
+        <h2>We get it.</h2>
+        <video
+          class="espresso-video"
+          src="./C Espresso.m4v"
+          autoplay
+          loop
+        ></video>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
