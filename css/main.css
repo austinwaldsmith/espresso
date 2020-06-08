@@ -1,0 +1,121 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Tera", sans-serif;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+button {
+  padding: 2rem 5rem;
+  border: 10px solid white;
+  background: rgba(196, 194, 194, 0);
+  color: white;
+  font-size: calc(3.5rem + 1vw);
+  font-weight: 600;
+  border-radius: 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 15%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background: rgba(196, 194, 194, 0.479);
+}
+
+.row {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5vw;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .row {
+    padding: 10rem 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  button {
+    font-size: calc(3rem + 1vw);
+    margin: 5rem 0;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  h1 {
+    font-size: calc(5rem + 1vw);
+    padding-bottom: 5rem;
+  }
+  h2 {
+    font-size: calc(4rem + 1vw);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: calc(3rem + 1vw);
+  }
+  h2 {
+    font-size: calc(2.5rem + 1vw);
+  }
+  button {
+    padding: 1rem 4rem;
+    font-size: calc(2rem + 1vw);
+    border: 5px solid white;
+  }
+}
+/*# sourceMappingURL=main.css.map */
